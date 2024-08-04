@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Translate !</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="pageContainer">
+        <h1 style="text-align: center; margin-bottom: 50px">Just Text ! And Everything next !</h1>
+        <div style="padding:20px;" class="formContainer">
+        <form action = "/translate" method="post" class="form">
+          <div>
+            <label for="query">Enter your english text to get the SQL : </label>
+            <textarea id="query" name="query" rows="7" cols="100"></textarea>
+          </div>
+          <div>
+          <button type="submit" class="predictButton">Start the magic</button>
+          </div>
+        </form>
+        </div>
+        <div class="response">
+            <h2>Your SQL Query !</h2><br/><br/>
+            <p>{{ sql_translation }}</p>
+        </div>
+      </div>  
+</body>
+</html>

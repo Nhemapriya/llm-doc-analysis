@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body {
+    text-align: center;
+    background-image: url("https://b.rgbimg.com/users/b/ba/badk/600/qMuS4nU.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.formContainer {
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+}
+
+.pageContainer {
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; */
+    position: relative;
+    transform: translateY(30%);
+    height: 100%;
+}
+.form > div {
+    /* display: inline-block; */
+    display: flex;
+    /* justify-content: flex-end; */
+}
+
+.form > div {
+    /* display: inline-block; */
+    display: flex;
+    justify-self: flex-end;
+    max-width: 600px;
+}
+
+.form div label {
+    font-size: larger;
+    width: 60%;
+    text-align: left;
+}
+
+.form label + input {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
+}
+
+.predictButton {
+    padding: 10px;
+    font-size: 20px;
+    width: max-content;
+    margin: 0 auto;
+}
+
+.response {
+    padding:30px;
+}
